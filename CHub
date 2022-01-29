@@ -37,7 +37,7 @@ local Frame_6 = Instance.new("Frame")
 local Row4 = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local Frame_7 = Instance.new("Frame")
-local Nul = Instance.new("TextButton")
+local Jail = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local Frame_8 = Instance.new("Frame")
 local Bar = Instance.new("Frame")
@@ -260,19 +260,19 @@ Frame_7.BorderSizePixel = 0
 Frame_7.Position = UDim2.new(1.17482519, 0, 0, 0)
 Frame_7.Size = UDim2.new(0, 6, 0, 35)
 
-Nul.Name = "Nul"
-Nul.Parent = Row4
-Nul.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
-Nul.Position = UDim2.new(1.5874126, 0, 0, 0)
-Nul.Size = UDim2.new(0, 143, 0, 35)
-Nul.Font = Enum.Font.SourceSans
-Nul.Text = "Build A Boat"
-Nul.TextColor3 = Color3.fromRGB(0, 0, 0)
-Nul.TextScaled = true
-Nul.TextSize = 14.000
-Nul.TextWrapped = true
+Jail.Name = "Jail"
+Jail.Parent = Row4
+Jail.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Jail.Position = UDim2.new(1.5874126, 0, 0, 0)
+Jail.Size = UDim2.new(0, 143, 0, 35)
+Jail.Font = Enum.Font.SourceSans
+Jail.Text = "JailBreak"
+Jail.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jail.TextScaled = true
+Jail.TextSize = 14.000
+Jail.TextWrapped = true
 
-UICorner_12.Parent = Nul
+UICorner_12.Parent = Jail
 
 Frame_8.Parent = Row4
 Frame_8.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
@@ -317,9 +317,9 @@ die.Name = "die"
 die.Parent = Main
 die.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
 die.Position = UDim2.new(0.568475425, 0, 0, 0)
-die.Size = UDim2.new(0, 45, 0, 25)
+die.Size = UDim2.new(0, 64, 0, 25)
 die.Font = Enum.Font.Creepster
-die.Text = "Remove"
+die.Text = "Destroy Gui"
 die.TextColor3 = Color3.fromRGB(0, 0, 0)
 die.TextScaled = true
 die.TextSize = 14.000
@@ -348,7 +348,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function OPNV_fake_script() -- Main.Smooth GUI Dragging 
+local function IQHKG_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -405,8 +405,8 @@ local function OPNV_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(OPNV_fake_script)()
-local function GADVSPV_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(IQHKG_fake_script)()
+local function OLABNN_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -428,6 +428,7 @@ local function GADVSPV_fake_script() -- ScreenGui.LocalScript
 	local ProL =Rows.Row3
 	local Bab =Rows.Row3.Bab
 	local Lt =Rows.Row4
+	local Jail = Rows.Row4.Jail
 	----Button Functions----
 	Zrush.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
@@ -451,6 +452,9 @@ local function GADVSPV_fake_script() -- ScreenGui.LocalScript
 	end)
 	Lt.MouseButton1Down:connect(function()
 		loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('2022 more like twenty-twenty-too')
+	end)
+	Jail.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/JailBreak"))();
 	end)
 	----Dont Edit Here----
 	Mods.Visible=false
@@ -490,4 +494,4 @@ local function GADVSPV_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(GADVSPV_fake_script)()
+coroutine.wrap(OLABNN_fake_script)()
