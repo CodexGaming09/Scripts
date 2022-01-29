@@ -291,7 +291,7 @@ Row5.Parent = ScrollingFrame
 Row5.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
 Row5.Size = UDim2.new(0, 143, 0, 35)
 Row5.Font = Enum.Font.SourceSans
-Row5.Text = "Null"
+Row5.Text = "Madcity"
 Row5.TextColor3 = Color3.fromRGB(0, 0, 0)
 Row5.TextScaled = true
 Row5.TextSize = 14.000
@@ -393,7 +393,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function GCSG_fake_script() -- Main.Smooth GUI Dragging 
+local function GKAVNBC_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -450,8 +450,8 @@ local function GCSG_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(GCSG_fake_script)()
-local function RRLW_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(GKAVNBC_fake_script)()
+local function SJEGFX_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -474,7 +474,8 @@ local function RRLW_fake_script() -- ScreenGui.LocalScript
 	local Bab =Rows.Row3.Bab
 	local Lt =Rows.Row4
 	local Jail = Rows.Row4.Jail
-	local Madcu = Rows.Row5
+	local Madc = Rows.Row5
+	local Madcu = Rows.Row5.Jail
 	----Button Functions----
 	Zrush.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
@@ -504,6 +505,9 @@ local function RRLW_fake_script() -- ScreenGui.LocalScript
 	end)
 	Madcu.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/MadcityCuff"))();
+	end)
+	Madc.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/mADCITY"))();
 	end)
 	----Dont Edit Here----
 	Mods.Visible=false
@@ -543,4 +547,4 @@ local function RRLW_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(RRLW_fake_script)()
+coroutine.wrap(SJEGFX_fake_script)()
