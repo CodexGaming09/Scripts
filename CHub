@@ -39,8 +39,10 @@ local UICorner_11 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local Open = Instance.new("Frame")
+local die = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
+local Open = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
 local Open_2 = Instance.new("TextButton")
 
 --Properties:
@@ -266,6 +268,20 @@ Close.TextWrapped = true
 
 UICorner_12.Parent = Close
 
+die.Name = "die"
+die.Parent = Main
+die.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+die.Position = UDim2.new(0.568475425, 0, 0, 0)
+die.Size = UDim2.new(0, 45, 0, 25)
+die.Font = Enum.Font.Creepster
+die.Text = "Remove"
+die.TextColor3 = Color3.fromRGB(0, 0, 0)
+die.TextScaled = true
+die.TextSize = 14.000
+die.TextWrapped = true
+
+UICorner_13.Parent = die
+
 Open.Name = "Open"
 Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
@@ -273,7 +289,7 @@ Open.Position = UDim2.new(-0.000355422497, 0, 0.525505066, 0)
 Open.Size = UDim2.new(0, 59, 0, 17)
 Open.ZIndex = 2
 
-UICorner_13.Parent = Open
+UICorner_14.Parent = Open
 
 Open_2.Name = "Open"
 Open_2.Parent = Open
@@ -287,7 +303,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function HWKXHF_fake_script() -- Main.Smooth GUI Dragging 
+local function MOTHO_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -344,8 +360,8 @@ local function HWKXHF_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(HWKXHF_fake_script)()
-local function KASTA_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(MOTHO_fake_script)()
+local function SUERTW_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -353,6 +369,8 @@ local function KASTA_fake_script() -- ScreenGui.LocalScript
 	local start = script.Parent.Startup
 	local OC = script.Parent.Open
 	local Openc =script.Parent.Open.Open
+	local Die = script.Parent.Main.die
+	local core = script.Parent.Parent.ScreenGui
 	Mods.Draggable=true
 	Mods.Active=true
 	--Buttons--
@@ -393,6 +411,9 @@ local function KASTA_fake_script() -- ScreenGui.LocalScript
 	Mods.Visible=true
 		Mods:TweenPosition(UDim2.new({0.274, 0},{0.297, 0}), 'Out', 'Bounce', '3')
 	end)
+	Die.MouseButton1Down:connect(function()
+		core:Destroy()
+	end)
 	Close.MouseButton1Down:connect(function()
 		Mods:TweenPosition(UDim2.new(0, 0,2, 0), 'Out', 'Bounce', '3')
 	wait(2)
@@ -416,4 +437,4 @@ local function KASTA_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(KASTA_fake_script)()
+coroutine.wrap(SUERTW_fake_script)()
