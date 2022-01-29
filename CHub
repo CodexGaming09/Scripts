@@ -28,13 +28,19 @@ local Frame_3 = Instance.new("Frame")
 local Owlh = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local Frame_4 = Instance.new("Frame")
-local Bar = Instance.new("Frame")
+local Row3 = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local Frame_5 = Instance.new("Frame")
+local Nul = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Frame_6 = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Open = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local Open_2 = Instance.new("TextButton")
 
 --Properties:
@@ -188,12 +194,51 @@ Frame_4.BorderSizePixel = 0
 Frame_4.Position = UDim2.new(1.34265733, 0, 0, 0)
 Frame_4.Size = UDim2.new(0, 6, 0, 35)
 
+Row3.Name = "Row3"
+Row3.Parent = ScrollingFrame
+Row3.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Row3.Size = UDim2.new(0, 143, 0, 35)
+Row3.Font = Enum.Font.SourceSans
+Row3.Text = "Project L"
+Row3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Row3.TextScaled = true
+Row3.TextSize = 14.000
+Row3.TextWrapped = true
+
+UICorner_9.Parent = Row3
+
+Frame_5.Parent = Row3
+Frame_5.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(1.17482519, 0, 0, 0)
+Frame_5.Size = UDim2.new(0, 6, 0, 35)
+
+Nul.Name = "Nul"
+Nul.Parent = Row3
+Nul.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Nul.Position = UDim2.new(1.5874126, 0, 0, 0)
+Nul.Size = UDim2.new(0, 143, 0, 35)
+Nul.Font = Enum.Font.SourceSans
+Nul.Text = "Null"
+Nul.TextColor3 = Color3.fromRGB(0, 0, 0)
+Nul.TextScaled = true
+Nul.TextSize = 14.000
+Nul.TextWrapped = true
+
+UICorner_10.Parent = Nul
+
+Frame_6.Parent = Row3
+Frame_6.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(1.34265733, 0, 0, 0)
+Frame_6.Size = UDim2.new(0, 6, 0, 35)
+
 Bar.Name = "Bar"
 Bar.Parent = Main
 Bar.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
 Bar.Size = UDim2.new(0, 387, 0, 25)
 
-UICorner_9.Parent = Bar
+UICorner_11.Parent = Bar
 
 TextLabel_3.Parent = Main
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -219,7 +264,7 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner_10.Parent = Close
+UICorner_12.Parent = Close
 
 Open.Name = "Open"
 Open.Parent = ScreenGui
@@ -228,7 +273,7 @@ Open.Position = UDim2.new(-0.000355422497, 0, 0.525505066, 0)
 Open.Size = UDim2.new(0, 59, 0, 17)
 Open.ZIndex = 2
 
-UICorner_11.Parent = Open
+UICorner_13.Parent = Open
 
 Open_2.Name = "Open"
 Open_2.Parent = Open
@@ -242,7 +287,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function EFSMJCA_fake_script() -- Main.Smooth GUI Dragging 
+local function HWKXHF_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -299,8 +344,8 @@ local function EFSMJCA_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(EFSMJCA_fake_script)()
-local function VHJBMRU_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(HWKXHF_fake_script)()
+local function KASTA_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -317,20 +362,24 @@ local function VHJBMRU_fake_script() -- ScreenGui.LocalScript
 	local Ebg = Rows.Row1.ElementalBg
 	local Zrush = Rows.Row2
 	local Ohub = Rows.Row2.Owlh
+	local ProL =Rows.Row3
 	----Button Functions----
 	Zrush.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
 	end)
 	Mitch.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/MZomb"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/MZomb?token=GHSAT0AAAAAABQR4JS27SINISS4RM2EBJQQYPUX7FA"))()
 	end)
 	Ebg.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ElementalBG"))()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/Ebg2"))()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/MM2"))()
-end)
+	end)
 	Ohub.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+	ProL.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ProjectL"))();
 	end)
 	----Dont Edit Here----
 	Mods.Visible=false
@@ -367,4 +416,4 @@ end)
 	
 	
 end
-coroutine.wrap(VHJBMRU_fake_script)()
+coroutine.wrap(KASTA_fake_script)()
