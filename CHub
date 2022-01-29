@@ -34,15 +34,21 @@ local Frame_5 = Instance.new("Frame")
 local Bab = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local Frame_6 = Instance.new("Frame")
-local Bar = Instance.new("Frame")
+local Row4 = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
+local Frame_7 = Instance.new("Frame")
+local Nul = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Frame_8 = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local die = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local Open = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
+local die = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Open = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
 local Open_2 = Instance.new("TextButton")
 
 --Properties:
@@ -235,12 +241,51 @@ Frame_6.BorderSizePixel = 0
 Frame_6.Position = UDim2.new(1.34265733, 0, 0, 0)
 Frame_6.Size = UDim2.new(0, 6, 0, 35)
 
+Row4.Name = "Row4"
+Row4.Parent = ScrollingFrame
+Row4.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Row4.Size = UDim2.new(0, 143, 0, 35)
+Row4.Font = Enum.Font.SourceSans
+Row4.Text = "LT2 (Bark)"
+Row4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Row4.TextScaled = true
+Row4.TextSize = 14.000
+Row4.TextWrapped = true
+
+UICorner_11.Parent = Row4
+
+Frame_7.Parent = Row4
+Frame_7.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(1.17482519, 0, 0, 0)
+Frame_7.Size = UDim2.new(0, 6, 0, 35)
+
+Nul.Name = "Nul"
+Nul.Parent = Row4
+Nul.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Nul.Position = UDim2.new(1.5874126, 0, 0, 0)
+Nul.Size = UDim2.new(0, 143, 0, 35)
+Nul.Font = Enum.Font.SourceSans
+Nul.Text = "Build A Boat"
+Nul.TextColor3 = Color3.fromRGB(0, 0, 0)
+Nul.TextScaled = true
+Nul.TextSize = 14.000
+Nul.TextWrapped = true
+
+UICorner_12.Parent = Nul
+
+Frame_8.Parent = Row4
+Frame_8.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Frame_8.BorderSizePixel = 0
+Frame_8.Position = UDim2.new(1.34265733, 0, 0, 0)
+Frame_8.Size = UDim2.new(0, 6, 0, 35)
+
 Bar.Name = "Bar"
 Bar.Parent = Main
 Bar.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
 Bar.Size = UDim2.new(0, 387, 0, 25)
 
-UICorner_11.Parent = Bar
+UICorner_13.Parent = Bar
 
 TextLabel_3.Parent = Main
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -266,7 +311,7 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner_12.Parent = Close
+UICorner_14.Parent = Close
 
 die.Name = "die"
 die.Parent = Main
@@ -280,7 +325,7 @@ die.TextScaled = true
 die.TextSize = 14.000
 die.TextWrapped = true
 
-UICorner_13.Parent = die
+UICorner_15.Parent = die
 
 Open.Name = "Open"
 Open.Parent = ScreenGui
@@ -289,7 +334,7 @@ Open.Position = UDim2.new(-0.000355422497, 0, 0.525505066, 0)
 Open.Size = UDim2.new(0, 59, 0, 17)
 Open.ZIndex = 2
 
-UICorner_14.Parent = Open
+UICorner_16.Parent = Open
 
 Open_2.Name = "Open"
 Open_2.Parent = Open
@@ -303,7 +348,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function RUBSNQI_fake_script() -- Main.Smooth GUI Dragging 
+local function MNVRQT_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -360,8 +405,8 @@ local function RUBSNQI_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(RUBSNQI_fake_script)()
-local function RQZP_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(MNVRQT_fake_script)()
+local function WRGUMZI_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -382,6 +427,7 @@ local function RQZP_fake_script() -- ScreenGui.LocalScript
 	local Ohub = Rows.Row2.Owlh
 	local ProL =Rows.Row3
 	local Bab =Rows.Row3.Bab
+	local Lt =Rows.Row4
 	----Button Functions----
 	Zrush.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
@@ -399,10 +445,12 @@ local function RQZP_fake_script() -- ScreenGui.LocalScript
 	end)
 	ProL.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ProjectL"))();
-	end)
 	Bab.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/BuildABoat"))();
 	end)
+		Lt.MouseButton1Down:connect(function()
+			loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('2022 more like twenty-twenty-too')
+		end)
 	----Dont Edit Here----
 	Mods.Visible=false
 	start.Visible=true
@@ -441,4 +489,4 @@ local function RQZP_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(RQZP_fake_script)()
+coroutine.wrap(WRGUMZI_fake_script)()
