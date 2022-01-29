@@ -327,7 +327,8 @@ local function VHJBMRU_fake_script() -- ScreenGui.LocalScript
 	Ebg.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ElementalBG"))()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/Ebg2"))()
-	end)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/MM2"))()
+end)
 	Ohub.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
 	end)
