@@ -46,15 +46,21 @@ local Frame_9 = Instance.new("Frame")
 local Jail_2 = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local Frame_10 = Instance.new("Frame")
-local Bar = Instance.new("Frame")
+local Row6 = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
+local Frame_11 = Instance.new("Frame")
+local Jail_3 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Frame_12 = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
-local die = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
-local Open = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
+local die = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Open = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
 local Open_2 = Instance.new("TextButton")
 
 --Properties:
@@ -122,8 +128,9 @@ UICorner_4.Parent = Main
 ScrollingFrame.Parent = Main
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
-ScrollingFrame.Position = UDim2.new(0.0206718352, 0, 0.108225107, 0)
+ScrollingFrame.Position = UDim2.new(0.0206718352, 0, 0.103896104, 0)
 ScrollingFrame.Size = UDim2.new(0, 370, 0, 194)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 150)
 ScrollingFrame.ScrollBarThickness = 0
 
 UIListLayout.Parent = ScrollingFrame
@@ -325,12 +332,51 @@ Frame_10.BorderSizePixel = 0
 Frame_10.Position = UDim2.new(1.34265733, 0, 0, 0)
 Frame_10.Size = UDim2.new(0, 6, 0, 35)
 
+Row6.Name = "Row6"
+Row6.Parent = ScrollingFrame
+Row6.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Row6.Size = UDim2.new(0, 143, 0, 35)
+Row6.Font = Enum.Font.SourceSans
+Row6.Text = "Bee Swarm Sim"
+Row6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Row6.TextScaled = true
+Row6.TextSize = 14.000
+Row6.TextWrapped = true
+
+UICorner_15.Parent = Row6
+
+Frame_11.Parent = Row6
+Frame_11.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Frame_11.BorderSizePixel = 0
+Frame_11.Position = UDim2.new(1.17482519, 0, 0, 0)
+Frame_11.Size = UDim2.new(0, 6, 0, 35)
+
+Jail_3.Name = "Jail"
+Jail_3.Parent = Row6
+Jail_3.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Jail_3.Position = UDim2.new(1.5874126, 0, 0, 0)
+Jail_3.Size = UDim2.new(0, 143, 0, 35)
+Jail_3.Font = Enum.Font.SourceSans
+Jail_3.Text = "Null"
+Jail_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jail_3.TextScaled = true
+Jail_3.TextSize = 14.000
+Jail_3.TextWrapped = true
+
+UICorner_16.Parent = Jail_3
+
+Frame_12.Parent = Row6
+Frame_12.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Frame_12.BorderSizePixel = 0
+Frame_12.Position = UDim2.new(1.34265733, 0, 0, 0)
+Frame_12.Size = UDim2.new(0, 6, 0, 35)
+
 Bar.Name = "Bar"
 Bar.Parent = Main
 Bar.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
 Bar.Size = UDim2.new(0, 387, 0, 25)
 
-UICorner_15.Parent = Bar
+UICorner_17.Parent = Bar
 
 TextLabel_3.Parent = Main
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -356,7 +402,7 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner_16.Parent = Close
+UICorner_18.Parent = Close
 
 die.Name = "die"
 die.Parent = Main
@@ -370,7 +416,7 @@ die.TextScaled = true
 die.TextSize = 14.000
 die.TextWrapped = true
 
-UICorner_17.Parent = die
+UICorner_19.Parent = die
 
 Open.Name = "Open"
 Open.Parent = ScreenGui
@@ -379,7 +425,7 @@ Open.Position = UDim2.new(-0.000355422497, 0, 0.525505066, 0)
 Open.Size = UDim2.new(0, 59, 0, 17)
 Open.ZIndex = 2
 
-UICorner_18.Parent = Open
+UICorner_20.Parent = Open
 
 Open_2.Name = "Open"
 Open_2.Parent = Open
@@ -393,7 +439,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function GKAVNBC_fake_script() -- Main.Smooth GUI Dragging 
+local function BPIE_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -450,8 +496,8 @@ local function GKAVNBC_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(GKAVNBC_fake_script)()
-local function SJEGFX_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(BPIE_fake_script)()
+local function URTL_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -476,6 +522,7 @@ local function SJEGFX_fake_script() -- ScreenGui.LocalScript
 	local Jail = Rows.Row4.Jail
 	local Madc = Rows.Row5
 	local Madcu = Rows.Row5.Jail
+	local BeeHappy = Rows.Row6
 	----Button Functions----
 	Zrush.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
@@ -508,6 +555,9 @@ local function SJEGFX_fake_script() -- ScreenGui.LocalScript
 	end)
 	Madc.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/mADCITY"))();
+	end)
+	BeeHappy.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/Bee%20Happy"))()
 	end)
 	----Dont Edit Here----
 	Mods.Visible=false
@@ -547,4 +597,4 @@ local function SJEGFX_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(SJEGFX_fake_script)()
+coroutine.wrap(URTL_fake_script)()
