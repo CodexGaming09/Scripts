@@ -357,7 +357,7 @@ Jail_3.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
 Jail_3.Position = UDim2.new(1.5874126, 0, 0, 0)
 Jail_3.Size = UDim2.new(0, 143, 0, 35)
 Jail_3.Font = Enum.Font.SourceSans
-Jail_3.Text = "Null"
+Jail_3.Text = "Shindo Life"
 Jail_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 Jail_3.TextScaled = true
 Jail_3.TextSize = 14.000
@@ -439,7 +439,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function BPIE_fake_script() -- Main.Smooth GUI Dragging 
+local function SKDH_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -496,8 +496,8 @@ local function BPIE_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(BPIE_fake_script)()
-local function URTL_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(SKDH_fake_script)()
+local function VOOGN_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -523,6 +523,7 @@ local function URTL_fake_script() -- ScreenGui.LocalScript
 	local Madc = Rows.Row5
 	local Madcu = Rows.Row5.Jail
 	local BeeHappy = Rows.Row6
+	local Slife = Rows.Row6.Jail
 	----Button Functions----
 	Zrush.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
@@ -558,6 +559,10 @@ local function URTL_fake_script() -- ScreenGui.LocalScript
 	end)
 	BeeHappy.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/Bee%20Happy"))()
+	end)
+	Slife.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Web/main/scripts/SnxwHub.txt"))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 	end)
 	----Dont Edit Here----
 	Mods.Visible=false
@@ -597,4 +602,4 @@ local function URTL_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(URTL_fake_script)()
+coroutine.wrap(VOOGN_fake_script)()
