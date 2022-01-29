@@ -322,10 +322,11 @@ local function VHJBMRU_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
 	end)
 	Mitch.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/MZomb?token=GHSAT0AAAAAABQR4JS27SINISS4RM2EBJQQYPUX7FA"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/MZomb"))()
 	end)
 	Ebg.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ElementalBG?token=GHSAT0AAAAAABQR4JS2VTNDFE75WTQIPO6MYPUX7XA"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ElementalBG"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/Ebg2"))()
 	end)
 	Ohub.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
