@@ -400,7 +400,7 @@ local function RQZP_fake_script() -- ScreenGui.LocalScript
 	ProL.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ProjectL"))();
 	end)
-	ProL.MouseButton1Down:connect(function()
+	Bab.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/BuildABoat"))();
 	end)
 	----Dont Edit Here----
