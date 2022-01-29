@@ -31,7 +31,7 @@ local Frame_4 = Instance.new("Frame")
 local Row3 = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local Frame_5 = Instance.new("Frame")
-local Nul = Instance.new("TextButton")
+local Bab = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local Frame_6 = Instance.new("Frame")
 local Bar = Instance.new("Frame")
@@ -215,19 +215,19 @@ Frame_5.BorderSizePixel = 0
 Frame_5.Position = UDim2.new(1.17482519, 0, 0, 0)
 Frame_5.Size = UDim2.new(0, 6, 0, 35)
 
-Nul.Name = "Nul"
-Nul.Parent = Row3
-Nul.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
-Nul.Position = UDim2.new(1.5874126, 0, 0, 0)
-Nul.Size = UDim2.new(0, 143, 0, 35)
-Nul.Font = Enum.Font.SourceSans
-Nul.Text = "Null"
-Nul.TextColor3 = Color3.fromRGB(0, 0, 0)
-Nul.TextScaled = true
-Nul.TextSize = 14.000
-Nul.TextWrapped = true
+Bab.Name = "Bab"
+Bab.Parent = Row3
+Bab.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
+Bab.Position = UDim2.new(1.5874126, 0, 0, 0)
+Bab.Size = UDim2.new(0, 143, 0, 35)
+Bab.Font = Enum.Font.SourceSans
+Bab.Text = "Build A Boat"
+Bab.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bab.TextScaled = true
+Bab.TextSize = 14.000
+Bab.TextWrapped = true
 
-UICorner_10.Parent = Nul
+UICorner_10.Parent = Bab
 
 Frame_6.Parent = Row3
 Frame_6.BackgroundColor3 = Color3.fromRGB(9, 130, 130)
@@ -303,7 +303,7 @@ Open_2.TextSize = 14.000
 
 -- Scripts:
 
-local function MOTHO_fake_script() -- Main.Smooth GUI Dragging 
+local function RUBSNQI_fake_script() -- Main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -360,8 +360,8 @@ local function MOTHO_fake_script() -- Main.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(MOTHO_fake_script)()
-local function SUERTW_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(RUBSNQI_fake_script)()
+local function RQZP_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local Close = script.Parent.Main.Close
@@ -381,6 +381,7 @@ local function SUERTW_fake_script() -- ScreenGui.LocalScript
 	local Zrush = Rows.Row2
 	local Ohub = Rows.Row2.Owlh
 	local ProL =Rows.Row3
+	local Bab =Rows.Row3.Bab
 	----Button Functions----
 	Zrush.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Rush/ZombieRushGUI"))()
@@ -398,6 +399,9 @@ local function SUERTW_fake_script() -- ScreenGui.LocalScript
 	end)
 	ProL.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/ProjectL"))();
+	end)
+	ProL.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CodexGaming09/Scripts/main/BuildABoat"))();
 	end)
 	----Dont Edit Here----
 	Mods.Visible=false
@@ -437,4 +441,4 @@ local function SUERTW_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(SUERTW_fake_script)()
+coroutine.wrap(RQZP_fake_script)()
