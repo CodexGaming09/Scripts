@@ -1,0 +1,2 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/kocmoc.lua"))()
+game:GetService("ReplicatedStorage").Events.SelectNPCOption:FireServer("ChooseWhiteTeam")
